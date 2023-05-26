@@ -31,5 +31,10 @@
                 text-decoration: none;
             }
         }
+
+        &--ul:hover {
+            font-size: larger;
+            font-weight: 900;
+        }
     }
 }
