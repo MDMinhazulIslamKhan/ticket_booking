@@ -1,0 +1,35 @@
+.navbar {
+    background-color: $bg-nav;
+    color: $text-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+
+    &__brand {
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        &--img {
+            width: 90px;
+            background-color: rgb(49, 61, 61);
+            border-radius: 50%;
+        }
+    }
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        &--ul {
+            cursor: pointer;
+            font-size: large;
+
+            a {
+                color: $text-white;
+                text-decoration: none;
+            }
+        }
+    }
+}
