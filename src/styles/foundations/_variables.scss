@@ -1,15 +1,20 @@
-/* background color */
+// background color 
 $bg-nav: #3ccfc3;
 $bg-auth: #cef8f3;
 $bg-auth-button: #63d3ca;
+$bg-auth-button-hover: #2c968d;
 
-/* text color */
+// text color
 $text-white: white;
+$text-dark: #05857a;
 $text-footer: rgb(98, 113, 116);
 
+// border
+$border-event: #9ae7e1;
 
+
+//  breakpoints media query
 $breakpoints: (
-    // Important breakpoints media query
     mobile: 320px,
     largeMobile: 420px,
     tablet: 768px,

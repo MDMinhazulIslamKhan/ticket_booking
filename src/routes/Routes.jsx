@@ -3,7 +3,8 @@ import App from "../App.jsx";
 import Login from "../pages/Login.jsx";
 import Error from "../pages/Error.jsx";
 import Registration from "../pages/Registration.jsx";
-import EventSearch from "../pages/EventSearch.jsx";
+import Event from "../pages/Event.jsx";
+import EventDetails from "../pages/EventDetails.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -13,7 +14,11 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <EventSearch />,
+                element: <Event />,
+            },
+            {
+                path: "/event/:id",
+                element: <EventDetails />,
             },
             {
                 path: "/login",

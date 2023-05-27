@@ -1,5 +1,4 @@
-.event {
-    height: 70vh;
+.content {
     display: flex;
     justify-content: center;
 
@@ -10,4 +9,47 @@
         margin: 20px;
         padding: 0 10px;
     }
+}
+
+.events {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 80px;
+
+    @include tablet {
+        grid-template-columns: auto auto;
+    }
+
+    @include largeMobile {
+        grid-template-columns: auto;
+    }
+
+    .event {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: zoom-in;
+        background-color: $bg-auth;
+        max-width: 380px;
+        border: 8px solid $border-event;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+
+        &__type {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.eventDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+
 }
