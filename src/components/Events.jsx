@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const Events = ({ data }) => {
-    console.log(data);
     return (
         <div className="events">
             {data.map(d => <>

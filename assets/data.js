@@ -341,8 +341,37 @@ const allEvents = [
 
 const allEventType = ['Sports', 'Music', 'Art', 'Comedy', 'Dance']
 const userInfo = {
+    name: "minhaz",
     email: "abc@def.com",
     password: "12345"
 }
 
-export default { allEvents, userInfo, allEventType };
+const seat = [
+    { seatNo: "A1", price: 550 },
+    { seatNo: "A2", price: 550 },
+    { seatNo: "A3", price: 550 },
+    { seatNo: "A4", price: 550 },
+    { seatNo: "A5", price: 550 },
+    { seatNo: "B1", price: 525 },
+    { seatNo: "B2", price: 525 },
+    { seatNo: "B3", price: 525 },
+    { seatNo: "B4", price: 525 },
+    { seatNo: "B5", price: 525 },
+    { seatNo: "C1", price: 500 },
+    { seatNo: "C2", price: 500 },
+    { seatNo: "C3", price: 500 },
+    { seatNo: "C4", price: 500 },
+    { seatNo: "C5", price: 500 },
+    { seatNo: "D1", price: 475 },
+    { seatNo: "D2", price: 475 },
+    { seatNo: "D3", price: 475 },
+    { seatNo: "D4", price: 475 },
+    { seatNo: "D5", price: 475 },
+    { seatNo: "E1", price: 450 },
+    { seatNo: "E2", price: 450 },
+    { seatNo: "E3", price: 450 },
+    { seatNo: "E4", price: 450 },
+    { seatNo: "E5", price: 450 },
+]
+
+export default { allEvents, userInfo, allEventType, seat };

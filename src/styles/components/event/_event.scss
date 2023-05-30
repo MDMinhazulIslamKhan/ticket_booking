@@ -9,7 +9,9 @@
         margin: 20px;
         padding: 0 10px;
     }
+
 }
+
 
 .events {
     display: grid;
@@ -52,4 +54,84 @@
     flex-direction: column;
     margin: 30px;
 
+    p {
+        margin: 10px 0;
+        font-size: larger;
+    }
+}
+
+.allSeats {
+    h3 {
+        text-align: center;
+    }
+
+    &__plan {
+        width: 210px;
+        height: 210px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 30px auto 10px auto;
+        cursor: pointer;
+
+        &--seat {
+            border: 2px solid $bg-nav;
+            margin: 2px;
+            padding: 8px;
+            border-radius: 10px;
+
+        }
+
+        &--seat:hover {
+            background-color: $bg-dark;
+            color: white;
+            font-weight: 600;
+        }
+    }
+
+    &__request {
+        color: $text-footer;
+        text-align: center;
+        font-size: medium;
+    }
+
+    &__error {
+        color: red;
+        margin: 10px;
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+.purchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__description {
+
+        .label {
+            display: inline;
+        }
+
+        input {
+            height: 40px;
+            border: 2px solid $bg-nav;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 0 10px;
+        }
+
+        button {
+            position: relative;
+            right: 70px;
+            font-size: 16px;
+            color: $text-dark;
+            border: none;
+            background: none;
+            width: 0;
+            cursor: pointer;
+        }
+
+    }
 }
