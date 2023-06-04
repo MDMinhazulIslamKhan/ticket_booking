@@ -5,6 +5,7 @@ import Error from "../pages/Error.jsx";
 import Registration from "../pages/Registration.jsx";
 import Event from "../pages/Event.jsx";
 import EventDetails from "../pages/EventDetails.jsx";
+import PurchaseInfo from "../pages/PurchaseInfo.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path: "/registration",
                 element: <Registration />,
+            },
+            {
+                path: "/purchase",
+                element: <PurchaseInfo />,
             },
         ]
     }

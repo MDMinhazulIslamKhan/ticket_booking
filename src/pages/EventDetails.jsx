@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import {  useNavigate, useParams } from "react-router-dom";
 import data from "../../assets/data";
 import { useState } from "react";
 
@@ -9,6 +9,8 @@ const EventDetails = () => {
     const [seatNo, setSeatNo] = useState('')
     const [seatPrice, setSeatPrice] = useState(0)
     const [selectedSeat, setSelectedSeat] = useState([])
+    const navigate = useNavigate();
+
     const selectSeat = (seat) => {
         if (selectedSeat.length >= 4) {
             return setError("You can select maximum 4 seat in one time.")
@@ -22,7 +24,6 @@ const EventDetails = () => {
             setSeatNo(selectedSeat.join());
             setError('')
             setSeatPrice(seatPrice + seat.price)
-            console.log(seatPrice * 5 / 100);
         }
     }
     const clearSeat = () => {
@@ -31,6 +32,21 @@ const EventDetails = () => {
         setSeatNo('');
         setSeatPrice(0);
     }
+    
+
+    const submitPurchase=(e)=>{
+        e.preventDefault();
+        const data={
+            seatNo, seatPrice,totalPrice:seatPrice + seatPrice * 5 / 100,event:event.title,date: event.date, location:event.location
+        }
+        if(!data.seatNo) {
+            return alert("You must select at least one seat")
+        }
+
+        navigate('/purchase',{ state: data })
+
+    }
+
     return (
         <>
             <div className="eventDetails">
@@ -53,14 +69,16 @@ const EventDetails = () => {
                 <p className="allSeats__request">Please choose any seat as you want</p>
                 <p className="allSeats__error">{error}</p>
             </div>
-            <div className="purchase">
+            <form className="purchase">
                 <div className="purchase__description">
                     <p className="label">Seat no:</p>
+                    <div className="">
                     <input type="text" value={seatNo} readOnly />
                     {
                         seatNo && <button onClick={clearSeat}>clear</button>
 
                     }
+                    </div>
                 </div>
                 <div className="purchase__description">
                     <p className="label">Seat fair:</p>
@@ -74,7 +92,8 @@ const EventDetails = () => {
                     <p className="label">Total:</p>
                     <input type="text" value={seatPrice + seatPrice * 5 / 100} readOnly />
                 </div>
-            </div>
+                <button className="purchase__submit" onClick={e=>submitPurchase(e)} type="submit">Checkout</button>
+            </form>
         </>
 
 

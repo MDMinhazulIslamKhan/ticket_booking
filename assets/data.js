@@ -168,7 +168,7 @@ const allEvents = [
         "artist": "Sarah Adams"
     },
     {
-        "id": "1",
+        "id": "22",
         "title": "Concert in the Park",
         "location": "Central Park",
         "eventType": "Music",
@@ -176,15 +176,7 @@ const allEvents = [
         "artist": "John Smith"
     },
     {
-        "id": "2",
-        "title": "Football Match",
-        "location": "Stadium",
-        "eventType": "Sports",
-        "date": "2023-07-20",
-        "athlete": "Michael Johnson"
-    },
-    {
-        "id": "3",
+        "id": "23",
         "title": "Basketball Game",
         "location": "Arena",
         "eventType": "Sports",
@@ -192,7 +184,7 @@ const allEvents = [
         "athlete": "LeBron James"
     },
     {
-        "id": "4",
+        "id": "24",
         "title": "Art Exhibition",
         "location": "Gallery XYZ",
         "eventType": "Art",
@@ -200,7 +192,7 @@ const allEvents = [
         "artist": "Jane Doe"
     },
     {
-        "id": "5",
+        "id": "25",
         "title": "Comedy Night",
         "location": "Laugh Factory",
         "eventType": "Comedy",
@@ -208,7 +200,7 @@ const allEvents = [
         "artist": "Mike Johnson"
     },
     {
-        "id": "6",
+        "id": "26",
         "title": "Basketball Game",
         "location": "Arena",
         "eventType": "Sports",
@@ -216,7 +208,7 @@ const allEvents = [
         "athlete": "LeBron James"
     },
     {
-        "id": "7",
+        "id": "27",
         "title": "Dance Performance2",
         "location": "City Theater",
         "eventType": "Dance",
@@ -224,7 +216,7 @@ const allEvents = [
         "artist": "Sarah Adams"
     },
     {
-        "id": "8",
+        "id": "28",
         "title": "Concert in the Park2",
         "location": "Central Park",
         "eventType": "Music",
@@ -232,7 +224,7 @@ const allEvents = [
         "artist": "John Smith"
     },
     {
-        "id": "9",
+        "id": "29",
         "title": "Football Match2",
         "location": "Stadium",
         "eventType": "Sports",
@@ -240,7 +232,7 @@ const allEvents = [
         "athlete": "Michael Johnson"
     },
     {
-        "id": "10",
+        "id": "30",
         "title": "Basketball Game2",
         "location": "Arena",
         "eventType": "Sports",
@@ -248,7 +240,7 @@ const allEvents = [
         "athlete": "LeBron James"
     },
     {
-        "id": "11",
+        "id": "31",
         "title": "Art Exhibition2",
         "location": "Gallery XYZ",
         "eventType": "Art",
@@ -256,7 +248,7 @@ const allEvents = [
         "artist": "Jane Doe"
     },
     {
-        "id": "12",
+        "id": "32",
         "title": "Comedy Night2",
         "location": "Laugh Factory",
         "eventType": "Comedy",
@@ -264,7 +256,7 @@ const allEvents = [
         "artist": "Mike Johnson"
     },
     {
-        "id": "13",
+        "id": "33",
         "title": "Basketball Game2",
         "location": "Arena",
         "eventType": "Sports",
@@ -272,7 +264,7 @@ const allEvents = [
         "athlete": "LeBron James"
     },
     {
-        "id": "14",
+        "id": "34",
         "title": "Dance Performance2",
         "location": "City Theater",
         "eventType": "Dance",
@@ -280,7 +272,7 @@ const allEvents = [
         "artist": "Sarah Adams"
     },
     {
-        "id": "15",
+        "id": "35",
         "title": "Concert in the Park3",
         "location": "Central Park",
         "eventType": "Music",
@@ -288,7 +280,7 @@ const allEvents = [
         "artist": "John Smith"
     },
     {
-        "id": "16",
+        "id": "36",
         "title": "Football Match3",
         "location": "Stadium",
         "eventType": "Sports",
@@ -296,7 +288,7 @@ const allEvents = [
         "athlete": "Michael Johnson"
     },
     {
-        "id": "17",
+        "id": "37",
         "title": "Basketball Game3",
         "location": "Arena",
         "eventType": "Sports",
@@ -304,7 +296,7 @@ const allEvents = [
         "athlete": "LeBron James"
     },
     {
-        "id": "18",
+        "id": "38",
         "title": "Art Exhibition3",
         "location": "Gallery XYZ",
         "eventType": "Art",
@@ -312,7 +304,7 @@ const allEvents = [
         "artist": "Jane Doe"
     },
     {
-        "id": "19",
+        "id": "39",
         "title": "Comedy Night3",
         "location": "Laugh Factory",
         "eventType": "Comedy",
@@ -320,7 +312,7 @@ const allEvents = [
         "artist": "Mike Johnson"
     },
     {
-        "id": "20",
+        "id": "40",
         "title": "Basketball Game3",
         "location": "Arena",
         "eventType": "Sports",
@@ -328,7 +320,7 @@ const allEvents = [
         "athlete": "LeBron James"
     },
     {
-        "id": "21",
+        "id": "41",
         "title": "Dance Performance3",
         "location": "City Theater",
         "eventType": "Dance",

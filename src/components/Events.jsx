@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const Events = ({ data }) => {
     return (
         <div className="events">
-            {data.map(d => <>
-                <Link to={`/event/${d.id}`} className="event">
+            {data.map(d => <div key={d.id}>
+                <Link to={`/event/${d.id}`}  className="event">
                     <h3 className="event__title">{d.title}</h3>
                     <p className="event__type">{d.eventType}</p>
                     <p className="event__type">{d.location}</p>
-                </Link></>)}
+                </Link></div>)}
         </div>
     );
 };
